@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\SerucityController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+/**
+ * SecurityController
+ */
+Route::prefix('security')->group(function () {
+
+    
+    Route::get('', [SerucityController::class, 'index']);
+
 });

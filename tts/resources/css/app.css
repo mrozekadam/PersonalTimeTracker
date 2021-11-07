@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/** General styles */
+.tss-input {
+    border-left: 4px solid #7028f6;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 10px 5px 24px 0 rgba(62,70,152,.2);
+    padding: 17px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.tss-label {
+    color: #adaeb2;
+    font-size: 13px;
+    font-size: .8125rem;
+    line-height: 13px;
+    line-height: .8125rem;
+    margin-top: 35px;
+    margin-bottom: 17px;
+    margin-left: 3px;
+    font-weight: 300;
+}
+
