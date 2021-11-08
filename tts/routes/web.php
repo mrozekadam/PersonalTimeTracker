@@ -18,6 +18,7 @@ use App\Http\Controllers\SerucityController;
 Route::get('/', [SerucityController::class, 'index']);
 
 
+
 /**
  * SecurityController
  */
