@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('./pages/login.page.css');
 
 /** General styles */
 .tss-input {

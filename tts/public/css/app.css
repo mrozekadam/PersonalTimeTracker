@@ -1,3 +1,64 @@
+.login-form-wrapper .tss-input {
+  margin-bottom: 0.6em;
+  min-width: 7em;
+}
+
+.login-form-wrapper .tss-label {
+  color: #adaeb2;
+  font-size: 13px;
+  font-size: .8125rem;
+  line-height: 13px;
+  line-height: .8125rem;
+  margin-top: 35px;
+  margin-bottom: 17px;
+  margin-left: 3px;
+  font-weight: 300;
+}
+
+.login-form-wrapper .split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.login-form-wrapper .tss-button {
+  border: none;
+  float: right;
+  background-color: #7028f6;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 12px 55px;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 16px;
+  line-height: 1rem;
+  font-weight: 300;
+  box-shadow: 10px 2px 40px 0 rgba(62,70,152,.49);
+  cursor: pointer;
+}
+
+.login-form-wrapper .tss-button.low {
+  margin-top: 64px;
+  margin-right: 1px;
+  color: #bcc7ce;
+  font-size: 14px;
+  font-size: .875rem;
+  line-height: 13px;
+  line-height: .8125rem;
+  margin-left: 20%;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+@media (max-width: 500px) {
+  .login-form-wrapper .split {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+}
 /*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */

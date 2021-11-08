@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\DashController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SerucityController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +15,7 @@ use App\Http\Controllers\SerucityController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [SerucityController::class, 'index']);
 
 
 /**
@@ -23,7 +23,17 @@ Route::get('/', function () {
  */
 Route::prefix('security')->group(function () {
 
-    
-    Route::get('', [SerucityController::class, 'index']);
+
+});
+
+/**
+ * DashController
+ */
+Route::prefix('dash')->group(function () {
+
+    Route::get('/', [DashController::class, 'index']);
+    Route::get('trackers', [DashController::class, 'trackers']);
+    Route::get('reports', [DashController::class, 'reports']);
+    Route::get('settings', [DashController::class, 'settings']);
 
 });
